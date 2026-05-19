@@ -1,0 +1,16 @@
+services:
+  drone-vc-p:
+    build: .
+    environment:
+      BOT_TOKEN: $BOT_TOKEN
+      PROTECT_CONTENT: $PROTECT_CONTENT
+      DISABLE_NOTIFICATION: $DISABLE_NOTIFICATION
+      ALLOW_PUBLIC: $ALLOW_PUBLIC
+      ADMINS: $ADMINS
+      BATCH_SIZE_LIMIT: $BATCH_SIZE_LIMIT
+      FSUB: $FSUB
+      DB_CHANNEL: $DB_CHANNEL
+      AUTO_DELETE: $AUTO_DELETE
+    resources:
+      cpu: 1000m
+      memory: 1Gi
